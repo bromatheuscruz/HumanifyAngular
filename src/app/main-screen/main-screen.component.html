@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 main-navbar-background">
+      <div class="navbar-user-info">
+        <img src="./../../assets/images/download.jpeg" class="img-fluid image-avatar" alt="avatar">
+        <h4>{{ user.name }}</h4>
+        <h6>{{ user.position }}</h6>
+      </div>
+      <div class="choosed-department">
+        <div class="form-group">
+          <label for="choosed-department">Departamento</label>
+          <select id="choosed-department" class="form-control">
+            <option value="supply">Estoque</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="choosed-section">Seção</label>
+          <select name="" id="choosed-section" class="form-control">
+            <option value="">Peças</option>
+          </select>
+        </div>
+      </div>
+      <div class="department-section">
+        <button class="btn btn-primary" style="color: #ffffff;">
+          <i class="fas fa-allergies"></i>
+          <span>Separação</span>
+        </button>
+        <button class="btn btn-primary" style="color: #ffffff;">
+          <i class="fas fa-eye"></i>
+          <span>Conferência</span>
+        </button>
+        <button class="btn btn-primary" style="color: #ffffff;">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Balcão</span>
+        </button>
+        <button class="btn btn-primary" style="color: #ffffff;">
+            <i class="fas fa-route"></i>
+            <span>Expedição</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-xs-8 main-background">
+
+    </div>
+  </div>
+</div>
