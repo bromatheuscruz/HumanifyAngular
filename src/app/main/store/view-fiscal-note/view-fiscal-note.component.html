@@ -1,0 +1,39 @@
+<div>
+  <div class="card">
+    <div class="card-header main-container-header">
+      <i class="fas fa-search"></i>
+      <h1>Visualizar notas</h1>
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Número da nota</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Tipo de entrega</th>
+            <th scope="col">Status</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let note of fiscalNotes; index as i">
+            <th scope="row">{{ i + 1}}</th>
+            <th>{{ note.number }}</th>
+            <th>{{ note.client }}</th>
+            <th>{{ note.type }}</th>
+            <th>{{ note.status }}</th>
+            <th>{{ note.totalValue }}</th>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+    </div>
+    <div class="card-footer">
+      <h6 class="text-center">{{ notification }}</h6>
+    </div>
+  </div>
+
+
+</div>

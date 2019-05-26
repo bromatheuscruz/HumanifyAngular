@@ -16,13 +16,22 @@
         <div class="form-group">
           <label for="choosed-section">Seção</label>
           <select name="" id="choosed-section" class="form-control">
-            <option value="">Peças</option>
+            <option value="">Separação de peças</option>
           </select>
         </div>
       </div>
       <div class="department-section">
+
+        <button class="btn btn-primary" (click)="goToRoute('/main/store/view-fiscal-note')" style="color: #ffffff;">
+          <i class="fas fa-search"></i>
+          <span>Visualizar notas</span>
+        </button>
+        <button class="btn btn-primary" (click)="goToRoute('/main/store/start-separation')" style="color: #ffffff;">
+          <i class="fas fa-play"></i>
+          <span>Início de Separ...</span>
+        </button>
         <button class="btn btn-primary" style="color: #ffffff;">
-          <i class="fas fa-allergies"></i>
+          <i class="fas fa-mitten"></i>
           <span>Separação</span>
         </button>
         <button class="btn btn-primary" style="color: #ffffff;">
@@ -30,17 +39,21 @@
           <span>Conferência</span>
         </button>
         <button class="btn btn-primary" style="color: #ffffff;">
-            <i class="fas fa-sign-out-alt"></i>
-            <span>Balcão</span>
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Balcão</span>
         </button>
+
         <button class="btn btn-primary" style="color: #ffffff;">
-            <i class="fas fa-route"></i>
-            <span>Expedição</span>
+          <i class="fas fa-route"></i>
+          <span>Expedição</span>
         </button>
       </div>
     </div>
+    <!-- end side navbar -->
     <div class="col-xs-8 main-background">
-
+      <div class="main-container">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>

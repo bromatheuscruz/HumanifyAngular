@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginScreenComponent } from './login-screen/login-screen.component';
-import { MainScreenComponent } from './main-screen/main-screen.component';
-
 const routes: Routes = [
   {
-    path: '', component: LoginScreenComponent
+    path: '', redirectTo: '/login', pathMatch: 'full'
   },
   {
-    path: 'main', component: MainScreenComponent
+    path: 'login', loadChildren: './login/login.module#LoginModule'
+  },
+  {
+    path: 'main', loadChildren: './main/main.module#MainModule'
   }
 ];
 

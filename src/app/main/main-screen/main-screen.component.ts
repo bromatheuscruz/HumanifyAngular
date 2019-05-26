@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface User 
 {
@@ -13,12 +14,16 @@ interface User
 })
 export class MainScreenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   user: User = { 
     name: 'Matheus Cruz',
     position: 'Fullstack Developer'
   };
+
+  goToRoute(route: string): void {
+    this.router.navigate([route]);
+  }
 
   ngOnInit() {
   }
